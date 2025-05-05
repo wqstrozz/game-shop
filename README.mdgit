@@ -1,0 +1,2 @@
+"# game-shop"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/wqstrozz/game-shop.gitgit push -u origin main
+"# game-shop"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/wqstrozz/game-shop.gitgit push -u origin main

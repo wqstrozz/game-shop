@@ -1,0 +1,84 @@
+.games {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Сетка карточек игр */
+.game-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Адаптивность */
+@media (min-width: 600px) {
+  .game-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .game-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .game-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Карточка игры */
+.game-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-details {
+  padding: 15px;
+}
+
+.game-details img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.game-title {
+  font-size: 1.4rem;
+  color: #222;
+  margin: 12px 0 8px;
+}
+
+.game-description {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-price {
+  font-weight: bold;
+  color: #009688;
+  font-size: 1.1rem;
+}

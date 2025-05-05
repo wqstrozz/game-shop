@@ -1,0 +1,117 @@
+.cart {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.cart h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cart p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart button {
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cart button:hover {
+  background-color: #d9363e;
+}
+
+.cart .close-btn {
+  background-color: #32353b;
+  margin-bottom: 20px;
+}
+
+.cart .close-btn:hover {
+  background-color: #32353b;
+}
+
+.cart .total {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+
+.cart-open-btn {
+  background-color: #343a40; /* Тёмно-серый фон */
+  color: white;
+  /* border: 1px solid white; */
+  padding: 4px 8px; /* Уменьшаем размер кнопки */
+  font-size: 14px; /* Уменьшаем шрифт */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-open-btn:hover {
+  background-color: #f5f5f5; /* Очень светлый фон при наведении */
+  border-color: #f5f5f5; /* Светлая рамка при наведении */
+  color: #343a40; /* Тёмный текст */
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  display: flex; /* Для того чтобы элементы располагались в ряд */
+  align-items: center; /* Вертикальное выравнивание */
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart li img {
+  width: 50px; /* Размер мини-картинки */
+  height: 50px;
+  object-fit: cover; /* Сохраняем пропорции изображения */
+  margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+.cart li .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart li .product-info p {
+  margin: 0;
+  font-size: 14px;
+}
